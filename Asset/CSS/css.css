@@ -1,0 +1,244 @@
+:root {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  --clr-wht-basic: #FFFFFF;
+  --clr-wht-cultured: #f3f3f3;
+  --clr-wht-gainsboro: #DADCE0;
+  --clr-wht-light-grey: #D1D1D1;
+  --clr-wht-sonic-silver: #707070;
+  --clr-blk-davys-grey: #4F4F4F;
+  --clr-grn-sheen: #76BBB3;
+  --clr-grn-keppel: #08AF9C;
+  --clr-grn-generic-viridian: #068374;
+  --clr-org-pumpkin: #FC7222;
+  --clr-silver: #C7C7C7;
+  --clr-gry-dim: #696969;
+  --clr-gry-davys: #4f4f4f;
+  --clr-blck-basic: #000000;
+  --clr-red-rosso-corsa: #E00B00;
+  --clr-red-barn: #7A0600;
+  --clr-blue-azure: #E1F5FF;
+  --clr-blue-star-command: #0077B5;
+  --clr-blue-lapis-lazuli: #005D8F;
+  --clr-blue-honolulu: #0068AF;
+  --clr-orng-pale-pink: #FFD8D6;
+  --clr-orng-bittersweet: #FF645C;
+  --clr-orng-tart: #FF3D33;
+  --clr-grn-nyanza: #DDF8E2;
+  --clr-grn-malachite: #4CD964;
+  --clr-grn-malachite-2: #35D450;
+  --clr-gld-web-golden: #FFD700;
+  --gradient-grn-left: linear-gradient(to left, var(--clr-grn-keppel), var(--clr-grn-generic-viridian));
+  /* width */
+  /* Handle */
+  /* Handle on hover */
+}
+
+:root ::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 0.35rem;
+}
+
+:root ::-webkit-scrollbar-thumb {
+  background: var(--clr-blue-star-command);
+}
+
+:root ::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-blue-star-command);
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body .container .main-content {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: 3fr;
+      grid-template-columns: 3fr;
+  grid-auto-columns: 1fr;
+      grid-template-areas: "header" "body" "footer";
+}
+
+body .container .main-content .header-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .main-content .header-content .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+body .container .main-content .header-content .header-logo img {
+  width: 100px;
+}
+
+body .container .main-content .header-content .header-button-back button {
+  background-color: var(--clr-wht-basic);
+  color: var(--clr-blue-lapis-lazuli);
+  border: 2px solid var(--clr-blue-star-command);
+  border-radius: 12px;
+  padding: 10px;
+  width: 100px;
+  letter-spacing: 0.1rem;
+}
+
+body .container .main-content .header-content .header-button-back button:hover {
+  background-color: var(--clr-blue-star-command);
+  color: var(--clr-wht-basic);
+}
+
+body .container .main-content .body-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: body;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .container .main-content .body-content .body-tittle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 34px;
+  letter-spacing: 0.1rem;
+}
+
+body .container .main-content .body-content .body-choice-content ul {
+  border-bottom: 2px solid var(--clr-gry-dim);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+body .container .main-content .body-content .body-choice-content ul .active {
+  color: black !important;
+}
+
+body .container .main-content .body-content .body-choice-content ul li {
+  list-style: none;
+  font-weight: 600;
+  color: var(--clr-gry-dim);
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+body .container .main-content .body-content .body-rundown-content {
+  border-bottom: 2px solid var(--clr-gry-dim);
+}
+
+body .container .main-content .body-content .body-rundown-content .tab-contents {
+  background-color: transparent;
+  color: var(--clr-gry-dim);
+  display: block;
+}
+
+body .container .main-content .body-content .body-rundown-content .tab-contents .second-tab {
+  display: none;
+}
+
+body .container .main-content .body-content .body-rundown-content .tab-contents .row-agenda {
+  width: 100%;
+  padding: 20px;
+  max-height: 310px;
+  overflow: scroll;
+}
+
+body .container .main-content .body-content .body-rundown-content .tab-contents .row-agenda .row-rundown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10rem;
+  border-bottom: 2px solid var(--clr-gry-dim);
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+body .container .main-content .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .main-content .footer-content button {
+  background-color: var(--clr-wht-basic);
+  color: var(--clr-gry-dim);
+  border: 2px solid var(--clr-org-pumpkin);
+  border-radius: 12px;
+  padding: 10px;
+  width: 200px;
+  letter-spacing: 0.1rem;
+}
+
+body .container .main-content .footer-content button:hover {
+  background-color: var(--clr-org-pumpkin);
+  color: var(--clr-wht-basic);
+  border: 3px solid var(--clr-org-pumpkin);
+}
+/*# sourceMappingURL=css.css.map */
