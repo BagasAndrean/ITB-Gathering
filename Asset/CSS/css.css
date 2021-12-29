@@ -119,6 +119,7 @@ body .container .main-content .header-content .header-button-back button:hover {
 }
 
 body .container .main-content .body-content {
+  width: 80%;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: body;
@@ -197,7 +198,6 @@ body .container .main-content .body-content .body-rundown-content .tab-contents 
 }
 
 body .container .main-content .body-content .body-rundown-content .tab-contents .row-agenda {
-  width: 100%;
   padding: 20px;
   max-height: 310px;
   overflow: scroll;

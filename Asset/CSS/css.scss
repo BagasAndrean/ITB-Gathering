@@ -111,6 +111,7 @@ body {
       }
 
       .body-content {
+        width: 80%;
         grid-area: body;
         display: flex;
         flex-direction: column;
@@ -162,11 +163,12 @@ body {
             color: var(--clr-gry-dim);
             display: block;
 
-            .second-tab{
+            .second-tab {
               display: none;
             }
+
             .row-agenda {
-              width: 100%;
+
               padding: 20px;
               max-height: 310px;
               overflow: scroll;
